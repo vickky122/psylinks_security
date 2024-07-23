@@ -44,9 +44,54 @@ function App() {
             <p>Discover our range of software solutions designed to safeguard your digital presence. Stay one step ahead of cyber threats with Psylinks Security.</p>
           </div>
           <div className="image-container">
-            <img src="/images/third=.png" alt="Cyber Security" />
+            <img src="/images/third.png" alt="Cyber Security" />
           </div>
         </div>
+        <section className="second-section">
+          <div className="content">
+            <div className="text-and-image-container">
+              <div className="image-container">
+                <img src="/images/forth.png" alt="Cyber Security" />
+              </div>
+              <div className="text-container">
+                <h3>And let's not forget</h3>
+                <h1>Cyber Security Blog</h1>
+                <p>Explore our blog for the latest insights, tips, and best practices in cyber security. Our experts share their knowledge to help you enhance your online safety. Stay informed and stay secure with Psylinks Security.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div className="about-us">
+      <h1>About Psylinks Security</h1>
+      <p>Psylinks Security is a trusted name in the field of cyber security. With our cutting-edge software solutions, we empower individuals to safeguard their digital lives. Our team of experts is dedicated to providing the best protection against cyber threats.
+
+</p>
+    </div>
+    <div className="image-container">
+                <img src="/images/protect.png" alt="Cyber Security" />
+              </div>
+    <div className="contact-form">
+      <h1>Contact Us</h1>
+      <form>
+        <label>
+          Name:
+          <input type="text" name="name" />
+        </label>
+        <label>
+          Last Name:
+          <input type="text" name="lastName" />
+        </label>
+        <label>
+          Your Email:
+          <input type="email" name="email" />
+        </label>
+        <label>
+          Message:
+          <textarea name="message"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
       </main>
       <Footer />
     </div>

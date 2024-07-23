@@ -29,10 +29,12 @@ main .text-and-image-container {
   align-items: center;
   justify-content: center;
   text-align: left;
+  flex-wrap: wrap;
 }
 
 main .text-container {
   margin-right: 2rem;
+  flex: 1;
 }
 
 main h1 {
@@ -49,6 +51,7 @@ main p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 
 .image-container img {
@@ -93,6 +96,7 @@ main p {
   align-items: center;
   justify-content: space-between;
   text-align: left;
+  flex-wrap: wrap;
 }
 
 .second-section .image-container {
@@ -117,4 +121,54 @@ main p {
 .second-section p {
   font-size: 1.25rem;
   margin-bottom: 2rem;
+}
+
+/* Contact Us form styles */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.contact-form h1 {
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #32e432;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #28b828;
+}
+
+/* About Us page styles */
+.about-us {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
 }
