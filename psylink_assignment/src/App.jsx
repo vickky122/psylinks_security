@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './App.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 function App() {
+  useEffect(() =>{
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  },[]);
+  
   return (
     <div className="App">
       <Header />
       <main>
-        <div className="text-and-image-container">
+        <div className="text-and-image-container" data-aos="fade-up">
           <div className="text-container">
             <h1>Protect Yourself from Cyber threats</h1>
             <p>We Secure Your Digital World</p>
@@ -18,8 +29,7 @@ function App() {
           </div>
         </div>
 
-        
-        <section className="second-section">
+        <section className="second-section" data-aos="fade-up">
           <div className="content">
             <div className="text-container">
               <h2>We are Hiring!</h2>
@@ -37,7 +47,8 @@ function App() {
             </div>
           </div>
         </section>
-        <div className="text-and-image-container">
+        
+        <div className="text-and-image-container" data-aos="fade-up">
           <div className="text-container">
             <h4>NOT TO MENTION</h4>
             <h1>Our Services</h1>
@@ -47,7 +58,8 @@ function App() {
             <img src="/images/third.png" alt="Cyber Security" />
           </div>
         </div>
-        <section className="second-section">
+        
+        <section className="second-section" data-aos="fade-up">
           <div className="content">
             <div className="text-and-image-container">
               <div className="image-container">
@@ -61,37 +73,38 @@ function App() {
             </div>
           </div>
         </section>
-        <div className="about-us">
-      <h1>About Psylinks Security</h1>
-      <p>Psylinks Security is a trusted name in the field of cyber security. With our cutting-edge software solutions, we empower individuals to safeguard their digital lives. Our team of experts is dedicated to providing the best protection against cyber threats.
-
-</p>
-    </div>
-    <div className="image-container">
-                <img src="/images/protect.png" alt="Cyber Security" />
-              </div>
-    <div className="contact-form">
-      <h1>Contact Us</h1>
-      <form>
-        <label>
-          Name:
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Last Name:
-          <input type="text" name="lastName" />
-        </label>
-        <label>
-          Your Email:
-          <input type="email" name="email" />
-        </label>
-        <label>
-          Message:
-          <textarea name="message"></textarea>
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+        
+        <div className="about-us" data-aos="fade-up">
+          <h1>About Psylinks Security</h1>
+          <p>Psylinks Security is a trusted name in the field of cyber security. With our cutting-edge software solutions, we empower individuals to safeguard their digital lives. Our team of experts is dedicated to providing the best protection against cyber threats.</p>
+        </div>
+        
+        <div className="image-container" data-aos="fade-up">
+          <img src="/images/protect.png" alt="Cyber Security" />
+        </div>
+        
+        <div className="contact-form" data-aos="fade-up">
+          <h1>Contact Us</h1>
+          <form>
+            <label>
+              Name:
+              <input type="text" name="name" />
+            </label>
+            <label>
+              Last Name:
+              <input type="text" name="lastName" />
+            </label>
+            <label>
+              Your Email:
+              <input type="email" name="email" />
+            </label>
+            <label>
+              Message:
+              <textarea name="message"></textarea>
+            </label>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </main>
       <Footer />
     </div>
