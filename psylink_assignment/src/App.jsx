@@ -18,7 +18,7 @@ function App() {
           </div>
         </div>
 
-        {/* New section */}
+        
         <section className="second-section">
           <div className="content">
             <div className="text-container">
