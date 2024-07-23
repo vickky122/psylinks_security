@@ -44,7 +44,7 @@ function App() {
             <p>Discover our range of software solutions designed to safeguard your digital presence. Stay one step ahead of cyber threats with Psylinks Security.</p>
           </div>
           <div className="image-container">
-            <img src="/images/third.png" alt="Cyber Security" />
+            <img src="/images/third=.png" alt="Cyber Security" />
           </div>
         </div>
       </main>
